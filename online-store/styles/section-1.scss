@@ -1,0 +1,182 @@
+// @include grid
+
+.shop {
+.swiper{
+    width: 90vw;
+}
+    .slide {
+        width: 33rem;
+        cursor: pointer;
+
+        &:hover .image {
+            img {
+                transform: scale(1.1);
+                transition: .6s ease all;
+            }
+
+            .icons {
+                right: 1rem;
+                transition: .6s ease all;
+            }
+        }
+
+        .image {
+            height: 38rem;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+
+            .discount {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                padding: .5rem 1.5rem;
+                font-size: 1.5rem;
+                color: white;
+                background: hsl(317 100% 54%);
+                z-index: 10;
+                border-radius: .5rem;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .icons {
+                position: absolute;
+                bottom: 0;
+                right: -6rem;
+
+                a {
+                    height: 5rem;
+                    width: 5rem;
+                    line-height: 4.5rem;
+                    font-size: 2rem;
+                    background: white;
+                    color: var(--clr-neon);
+                    box-shadow: var(--box-shadow);
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    display: block;
+                    border-radius: .5rem;
+
+                    &:hover {
+                        background: var(--clr-neon);
+                        color: white;
+                    }
+                }
+            }
+
+        }
+
+        .content {
+            padding: 2rem;
+
+            .stars {
+                padding-bottom: .5rem;
+
+                i {
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+
+            p {
+                font-size: 2rem;
+                color: white;
+                line-height: 2;
+            }
+
+            .price-card {
+                font-size: 2rem;
+                color: white;
+
+                span {
+                    font-size: 1.5rem;
+                    color: rgba(231, 223, 223, 0.912);
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+
+
+.blogs{
+    // width: 1300px;
+    // margin: 0 auto;
+
+    .slide{
+      
+        &:hover .image{
+            img{
+                cursor: pointer;
+                transform: scale(1.1);
+                transition: .8s ease all;
+            }
+
+            .icons{
+                transform: translateY(0);
+                transition: .8s ease all;
+            }
+        }
+
+        .image{
+            height: 33rem;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            .icons{
+                position: absolute;
+                background: white;
+                bottom: 0;left: 0;right: 0;
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem;
+                align-items: center;
+                z-index: 10;
+                border: 1px solid --clr-neon ;
+                transform: translateY(10rem);
+                
+                a{
+                    font-size: 1.5rem;
+                    color: white;
+                    
+
+                    i{color: var(--clr-neon);padding-right: .5rem;
+                    }
+                    &:hover{
+                        color: white;
+                    }
+                }
+
+                
+            }
+        }
+
+
+        .content{
+            text-align: center;
+            padding: 1.5rem;
+
+            h3{
+                font-size: 2rem;
+                color: white;
+            }
+            p{
+                padding: 1rem 0;
+                line-height: 2;
+                color: rgba(255, 255, 255, 0.849);
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

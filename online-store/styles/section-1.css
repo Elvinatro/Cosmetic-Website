@@ -1,0 +1,145 @@
+.shop .swiper {
+  width: 90vw;
+}
+.shop .slide {
+  width: 33rem;
+  cursor: pointer;
+}
+.shop .slide:hover .image img {
+  transform: scale(1.1);
+  transition: 0.6s ease all;
+}
+.shop .slide:hover .image .icons {
+  right: 1rem;
+  transition: 0.6s ease all;
+}
+.shop .slide .image {
+  height: 38rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.shop .slide .image .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  background: hsl(317deg, 100%, 54%);
+  z-index: 10;
+  border-radius: 0.5rem;
+}
+.shop .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shop .slide .image .icons {
+  position: absolute;
+  bottom: 0;
+  right: -6rem;
+}
+.shop .slide .image .icons a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  background: white;
+  color: var(--clr-neon);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 1rem;
+  text-align: center;
+  display: block;
+  border-radius: 0.5rem;
+}
+.shop .slide .image .icons a:hover {
+  background: var(--clr-neon);
+  color: white;
+}
+.shop .slide .content {
+  padding: 2rem;
+}
+.shop .slide .content .stars {
+  padding-bottom: 0.5rem;
+}
+.shop .slide .content .stars i {
+  font-size: 1.5rem;
+  color: white;
+}
+.shop .slide .content p {
+  font-size: 2rem;
+  color: white;
+  line-height: 2;
+}
+.shop .slide .content .price-card {
+  font-size: 2rem;
+  color: white;
+}
+.shop .slide .content .price-card span {
+  font-size: 1.5rem;
+  color: rgba(231, 223, 223, 0.912);
+  text-decoration: line-through;
+}
+
+.blogs .slide:hover .image img {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.8s ease all;
+}
+.blogs .slide:hover .image .icons {
+  transform: translateY(0);
+  transition: 0.8s ease all;
+}
+.blogs .slide .image {
+  height: 33rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.blogs .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .slide .image .icons {
+  position: absolute;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  z-index: 10;
+  border: 1px solid --clr-neon;
+  transform: translateY(10rem);
+}
+.blogs .slide .image .icons a {
+  font-size: 1.5rem;
+  color: white;
+}
+.blogs .slide .image .icons a i {
+  color: var(--clr-neon);
+  padding-right: 0.5rem;
+}
+.blogs .slide .image .icons a:hover {
+  color: white;
+}
+.blogs .slide .content {
+  text-align: center;
+  padding: 1.5rem;
+}
+.blogs .slide .content h3 {
+  font-size: 2rem;
+  color: white;
+}
+.blogs .slide .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 1.5rem;
+}/*# sourceMappingURL=section-1.css.map */
